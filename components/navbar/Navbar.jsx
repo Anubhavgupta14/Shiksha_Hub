@@ -5,6 +5,9 @@ import Link from "next/link";
 import $ from "jquery";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+// import PlainButton from "../PlainButton/plainbutton";
+// import DropdownButton from "../Dropdown/dropdown";
+import Profile from "../profile/Profile"
 
 
 
@@ -44,8 +47,8 @@ const Navbar = ({ authtoken }) => {
   useEffect(() => {
     const handleClick = (event) => {
       if (
-        !event.target.closest('.body') &&
-        !excludedDivRef.current.contains(event.target)
+        !event.target.closest('.body') 
+        
       ) {
         setOpen(false);
       }
@@ -78,7 +81,7 @@ const Navbar = ({ authtoken }) => {
       <div className={color ? (open ? "navbar" : "navbar scrolled-navbar") : "navbar"} id="navbar">
         <div className="navbar-left normal">
           <div><Link href={"/"}>
-            <h2 className="logo">The Design Engg</h2>
+            <h2 className="logo">Shiksha HUB</h2>
           </Link>
           </div>
 
@@ -88,12 +91,7 @@ const Navbar = ({ authtoken }) => {
             </Link>
 
             <Link href={"/"}>
-              <div className="nav nav1">Product</div>
-            </Link>
-
-
-            <Link href={"/pricing"}>
-              <div className="nav nav3">Pricing</div>
+              <div className="nav nav1">About Us</div>
             </Link>
 
             <Link href={"/contact"}>
@@ -102,13 +100,7 @@ const Navbar = ({ authtoken }) => {
           </div>
 
           <div className="navbar_button">
-            <div className="menu-btn">
-              <Link href="/ccm">
-                <button className="nav_login2">
-                  Get Started Its - Free
-                </button>
-              </Link>
-            </div>
+            
             <div className={authtoken != '' ? "menu-btn dis_none" : "menu-btn"}>
               <Link href="/signin">
                 <button className="nav_login">
@@ -116,10 +108,9 @@ const Navbar = ({ authtoken }) => {
                 </button>
               </Link>
             </div>
-            {/* <div className={authtoken != '' ? "menu-btn" : "menu-btn dis_none"}>
+            <div className={authtoken != '' ? "menu-btn" : "menu-btn dis_none"}>
               <Profile />
-              
-            </div> */}
+            </div>
           </div>
         </div>
 
@@ -133,27 +124,19 @@ const Navbar = ({ authtoken }) => {
               <div className="nav nav1" style={{backgroundColor:'#f9fbfc'}}>Home</div>
             </Link>
 
-            <Link href={"/"}>
-              <div className="nav nav1">Product</div>
-            </Link>
-
-
             <Link href={"/pricing"}>
-              <div className="nav nav3" style={{backgroundColor:'#f9fbfc'}}>Pricing</div>
+              <div className="nav nav3" style={{backgroundColor:'#f9fbfc'}}>About Us</div>
             </Link>
 
             <Link href={"/contact"}>
               <div className="nav nav2" style={{backgroundColor:'#f9fbfc'}}>Contact</div>
             </Link>
 
+            {/* <Link href={"/components/LoginPage/login"}>
+              <div className="nav nav3">Login</div>
+            </Link> */}
             <div className="mobile_btn">
-              <div className="menu-btn">
-                <Link href="/ccm">
-                  <button className="nav_login2">
-                    Get Started Its - Free
-                  </button>
-                </Link>
-              </div>
+              
               <div className={authtoken != '' ? "menu-btn dis_none" : "menu-btn"}>
                 <Link href="/signin">
                   <button className="nav_login">
@@ -161,16 +144,16 @@ const Navbar = ({ authtoken }) => {
                   </button>
                 </Link>
               </div>
-              {/* <div className={authtoken != '' ? "menu-btn" : "menu-btn dis_none"}>
+              <div className={authtoken != '' ? "menu-btn" : "menu-btn dis_none"}>
                 <Profile />
-              </div> */}
+              </div>
 
             </div>
 
           </div>
 
           <div className="navrel pos-rel normal flex-all">
-
+            
           </div>
         </div>
         <div className="hamburger">
@@ -204,6 +187,8 @@ const Navbar = ({ authtoken }) => {
             <MenuIcon size={20} style={{ color: "black" }} />
           )}
         </div>
+
+        
       </div>
     </nav>
   );

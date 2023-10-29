@@ -20,7 +20,7 @@
 
 .logo{
     padding-inline: 18px;
-    margin-right: 97px;
+    margin-right: -33px;
 }
 .logo:hover{
     color: #1081fc;
@@ -72,7 +72,7 @@
 .nav {
     font-size: 22px;
     /* font-weight: 600; */
-    width: 86px;
+    width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
