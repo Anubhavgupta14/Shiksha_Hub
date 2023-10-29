@@ -59,17 +59,17 @@ const page = ({authtoken}) => {
       <div className="home_data">
         <div className="home_datas">
           <h2>1M+</h2>
-          <p>community members</p>
+          <p>members</p>
         </div>
 
         <div className="home_datas">
           <h2>150+</h2>
-          <p>community groups</p>
+          <p>universities</p>
         </div>
 
         <div className="home_datas">
           <h2>50+</h2>
-          <p>countries represented</p>
+          <p>curriculum designed</p>
         </div>
       </div>
       <div id='faq' ref={aboutRef} className="home_faq"><Faqs /></div>
