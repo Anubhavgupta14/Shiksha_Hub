@@ -76,7 +76,7 @@ const LoginPage = ({authtoken}) => {
               progress: undefined,
               theme: "light",
               });
-            router.push("/dashboard")
+            router.push("/Sidebar")
             window.location.reload();
           }
           else{

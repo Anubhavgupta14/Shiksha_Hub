@@ -22,7 +22,7 @@ export function middleware(request) {
 
   if(loggedInUserNotAccessPath){
     if(authToken){
-       return NextResponse.redirect(new URL("/dashboard",request.url))
+       return NextResponse.redirect(new URL("/Sidebar",request.url))
     }
   } else{
     if(!authToken){
@@ -34,5 +34,5 @@ export function middleware(request) {
  
 // See "Matching Paths" below to learn more
 export const config = {
-  matcher: ['/signin','/signup','/dashboard','/admin','/dashboard_security','/dashboard_history','/pricing' ,'/api/users/:path*','/ccm','/ladle'],
+  matcher: ['/signin','/signup','/dashboard','/Sidebar','/admin','/dashboard_security','/dashboard_history','/pricing' ,'/api/users/:path*','/ccm','/ladle'],
 }
