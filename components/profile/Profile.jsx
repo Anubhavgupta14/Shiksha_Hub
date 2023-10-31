@@ -164,6 +164,9 @@ export default function AccountMenu() {
         <MenuItem onClick={dashboard}>
           <Avatar /> Profile
         </MenuItem>
+        <MenuItem onClick={dashboard}>
+          <Avatar /> Profile
+        </MenuItem>
         
         <Divider />
         <MenuItem onClick={security}>
