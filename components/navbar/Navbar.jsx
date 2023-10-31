@@ -159,7 +159,7 @@ const Navbar = ({ authtoken }) => {
         <div className="hamburger">
           <div>
             <Link href={"/"}>
-              <h2 className="logo">The Design Engg</h2>
+              <h2 className="logo">Shiksha HUB</h2>
             </Link>
           </div>
           <div onClick={handleClick} className={open ? "ham-pos res-nav" : "ham-pos"}>
