@@ -73,6 +73,9 @@ export default function AccountMenu() {
   const dashboard = () => {
     router.push('/dashboard');
   };
+  const dashboard2 = () => {
+    router.push('/Sidebar');
+  };
 
   const security = () => {
     router.push('/dashboard_security');
@@ -164,8 +167,8 @@ export default function AccountMenu() {
         <MenuItem onClick={dashboard}>
           <Avatar /> Profile
         </MenuItem>
-        <MenuItem onClick={dashboard}>
-          <Avatar /> Profile
+        <MenuItem onClick={dashboard2}>
+          <Avatar /> Dashboard
         </MenuItem>
         
         <Divider />

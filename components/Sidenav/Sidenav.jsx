@@ -2,6 +2,7 @@ import Navbar from "../navbar/Navbar";
 import styles from "../../styles/Home.module.css";
 // import "@/styles/Home.module.css"
 import { Rubik } from "next/font/google";
+
 import { useRef } from "react";
 import { toast } from "react-toastify";
 // import { AiFillMail } from 'react-icons/ai'
